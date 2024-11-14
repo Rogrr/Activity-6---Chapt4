@@ -3,38 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Make Change</title>
-   	<link rel="stylesheet" href="make_change.css">
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
+	<title>Income Tax Calculator</title>
+   	<link rel="stylesheet" href="calculate_tax.css">
 </head>
 
 <body>
 	<main>
-		<h1>Change Calculator</h1>
-
-		<label>Enter amount of change due (0-99):</label>
+		<h1>Income Tax Calculator</h1>
 		<div>
-			<input type="text" id="cents" />
+			<label>Enter taxable income:</label>
+			<input type="text" id="income" />
 			<input type="button" value="Calculate" name="calculate" id="calculate" />
 		</div>
 		<div>
-			<label>Quarters:</label>
-			<input type="text" id="quarters" disabled>
-		</div>
-		<div>
-			<label>Dimes:</label>
-			<input type="text" id="dimes" disabled>
-		</div>
-		<div>
-			<label>Nickels:</label>
-			<input type="text" id="nickels" disabled>
-		</div>
-		<div>
-			<label>Pennies:</label>
-			<input type="text" id="pennies" disabled>
+			<label>Income tax owed:</label>
+			<input type="text" id="tax" disabled>
 		</div>
 	</main>
-	<script src="make_change.js"></script>
+	<script src="calculate_tax.js"></script>
 </body>
 </html>
